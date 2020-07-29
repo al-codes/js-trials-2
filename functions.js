@@ -2,15 +2,42 @@
 
 
 // 1. isHometown
+function isHometown(town) {
+  return town === 'San Francisco';
 
-// Define your function here
+}
 
 
 // 2. getFullName
+function getFullName(firstName, lastName) {
 
-// Define your function here
+  return `${firstName} ${lastName}`;
+
+}
 
 
 // 3. calculateTotal
+function calculateTotal(basePrice, state, tax = 0.05) {
+  const subTotal = basePrice * (1 + tax);
 
-// Define your function here
+  let fee = 0;
+
+  if (state === 'CA') {
+    fee = 0.03 * subTotal;
+
+  } else if (state ==='PA') {
+    fee = 2;
+
+  } else if (state === 'MA') {
+    if (base_price <= 100) {
+      fee = 1;
+    } else {
+       fee = 3;
+    }
+  }  
+
+  
+  return subTotal + fee; 
+
+
+}
