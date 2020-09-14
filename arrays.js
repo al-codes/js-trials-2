@@ -3,12 +3,14 @@
 
 // 1. printIndices
 function printIndices(items) {
+
+  let idx = 0;
   
-  for (const i of items) {
-    console.log(i);
+  for (let i of items) {
+    console.log(i, idx);
+    idx += 1;  
   }
 }
-
 
 // 2. everyOtherItem
 function everyOtherItem(items) {
