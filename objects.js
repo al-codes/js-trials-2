@@ -2,12 +2,8 @@
 
 
 // 1. countWords
-function countWords(phrase) {
-  // Replace this with your code
-}
+function countWords(phrase) 
 
 
 // 2. getMelonsAtPrice
-function getMelonsAtPrice(price) {
-  // Replace this with your code
-}
+function getMelonsAtPrice(price) 
